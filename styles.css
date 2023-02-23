@@ -1,0 +1,78 @@
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 40px;
+    padding-right: 50px;
+}
+body{
+    padding: 10px;
+}
+.nav-item{
+    cursor: pointer;
+}
+.ch{
+    height: 2px;
+    transition: width 0.3s;
+    width: 0px;
+    background-color: rgb(67, 196, 67);
+    border-radius: 2px;
+}
+    .nav-item:hover>.ch{
+    
+        width: 100%;
+    }
+h2{
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin: 0px;
+    padding: 0px;
+    font-family:Arial, Helvetica, sans-serif;
+    
+}
+
+.download{
+    cursor: pointer;
+    position: relative;
+
+    width: 180px;
+    height: 40px;
+    background-color: rgb(67, 196, 67);
+    border-radius: 25px;
+    border: 1px solid black;
+    overflow: hidden;
+    
+}   
+.cent>*:hover .circle,.cent:has(h3:hover) .circle{
+    transform: translate(0px,-20px);
+    
+}
+.download:hover+h3, h3:hover{
+    color: white;
+}
+
+
+
+.circle{
+    
+    transition: all 0.40s linear;
+    background-color: black;
+    height: 80px;
+    width: 180px;
+    transform: translateY(100px);
+    border-radius: 50%;
+}
+
+h3{
+    position: absolute;
+    z-index: 1;
+    cursor: pointer;
+    color: black;
+    
+    transition: all 0.3s;
+}
+.cent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
